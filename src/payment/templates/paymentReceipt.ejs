@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Payment Receipt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap');
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "Barlow", sans-serif;
+            background-color: #f5f8fa;
+            color: #051E39;
+        }
+
+        html,
+        body,
+        p,
+        ol,
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        blockquote,
+        figure,
+        fieldset,
+        legend,
+        textarea,
+        pre,
+        iframe,
+        hr,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .level {
+            display: block;
+            width: 100%;
+        }
+
+
+        level-item {
+
+        }
+
+        .level-right {
+            float: right;
+        }
+
+        .level-left {
+            float: left;
+        }
+
+
+        .clearfix {
+            clear: both;
+        }
+
+
+        .pdf-content {
+            background-color: #fff !important;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+        }
+
+        .pdf-content .logo-wrapper {
+            background-color: #082026;
+            padding: 15px;
+            color: #fff;
+        }
+
+        .pdf-content .logo-wrapper img {
+            max-height: 3.5rem;
+        }
+
+        .level img {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .pdf-content .main-section-heading {
+            background-color: #f5f8fa;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .title {
+            color: #363636;
+            font-weight: bolder;
+            line-height: 1.125;
+        }
+
+
+        .pdf-content .main-section-heading .title {
+            font-size: 15px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .title,
+        .subtitle {
+            font-family: "Barlow", sans-serif;
+            color: #051E39;
+        }
+
+
+        .pdf-content .main-section-heading .title {
+            font-size: 1.3rem;
+        }
+
+        pdf-content .card {
+            border-radius: 0;
+            border: none;
+        }
+
+        .portlet.card {
+            box-shadow: none;
+            border-radius: 5px;
+            border: solid 0.5px #eaebeb;
+        }
+
+        .card {
+            box-shadow: none;
+            border-radius: 3px;
+            border: solid 0.5px #eaebeb;
+        }
+
+        .has-margin-b-1 {
+            margin-bottom: 10px !important;
+        }
+
+        .card {
+            background-color: white;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .card-content {
+            background-color: transparent;
+            padding: 20px;
+        }
+
+        .has-margin-b-5 {
+            margin-bottom: 10px !important;
+        }
+
+        .has-text-centered {
+            text-align: center !important;
+        }
+
+        article,
+        aside,
+        figure,
+        footer,
+        header,
+        hgroup,
+        section {
+            display: block;
+        }
+
+        .payment-portlet .items {
+            margin-bottom: 30px;
+        }
+
+
+        .payment-portlet .items .item-header {
+            border-bottom: thin solid #EAEAEA;
+            padding-bottom: 10px;
+            color: #051E39;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+
+        .pdf-content .card.payment-portlet .items .item-header {
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+
+        .payment-portlet .items .item-header .title {
+            font-size: 15px;
+            color: #051E39;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        .pdf-content .card.payment-portlet .items .item {
+            font-size: 13px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .payment-portlet .items .item p:first-child {
+            color: #B2B8BE;
+        }
+
+
+        .payment-portlet .items:last-child {
+            margin-bottom: 0;
+        }
+
+        .payment-portlet .items.has-border-top {
+            border-top: thin solid #EAEAEA;
+            padding-top: 10px;
+        }
+
+        .has-text-success {
+            color: #48c774 !important;
+        }
+
+        .is-size-5 {
+            font-size: 1.25rem !important;
+        }
+    </style>
+</head>
+
+<body>
+<section class="pdf-content">
+    <div class="logo-wrapper">
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item"><img src="https://example.com.ng/img/logo.png"></div>
+            </div>
+            <div class="level-right">
+                <div class="level-item">
+                    <p class="level-left">
+                        example House,<br>
+                        Example Expressway, By Example Roundabout, <br>
+                         Example, Example State <br>
+                        E: info@example.gov.ng, T: 070000example <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="main-section-heading">
+        <h3 class="title"><span>Payment Receipt</span></h3>
+    </div>
+    <div class="card portlet payment-portlet has-margin-b-1">
+        <div class="card-content">
+            <div class="has-text-centered has-margin-b-5"></div>
+            <div class="card-content-details">
+                <section class="pdf-item">
+                    <div class="items">
+                        <div class="item-header">
+                            <h3 class="title">Basic Info</h3>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <p class="level-left">Payment Reference</p>
+                                <p class="level-right"><%= payment.paymentRef %></p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <p class="level-left">Currency</p>
+                                <p class="level-right"
+                                   style="text-transform: capitalize"><%= payment.currency %></p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-header">
+                            <h3 class="title">Company Info</h3>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <p class="level-left">Name</p>
+                                <p class="level-right"><%= payment.company.name %></p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <p class="level-left">Email</p>
+                                <p class="level-right"><%= payment.company.email %></p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <p class="level-left">Phone Number</p>
+                                <p class="level-right"><%= payment.company.phone %></p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <p class="level-left">Password</p>
+                                <p class="level-right"><%= payment.company.exampleUniqueId %>
+                                </p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <% if (payment.bankAccount) { %>
+                        <div class="items">
+                            <div class="item-header">
+                                <h3 class="title">Account Info (<%= payment.currency %>)</h3>
+                            </div>
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <p class="level-left">Bank Name</p>
+                                    <p class="level-right"><%= payment.bankAccount.bankName %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="item">
+                                    <p class="level-left">Account Number</p>
+                                    <p class="level-right"><%= payment.bankAccount.accountNo %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="item">
+                                    <p class="level-left">Swift Code</p>
+                                    <p class="level-right"><%= payment.bankAccount.swiftCode %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="item">
+                                    <p class="level-left">Sort Code</p>
+                                    <p class="level-right"><%= payment.bankAccount.sortCode %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="item">
+                                    <p class="level-left">Corresponding Bank</p>
+                                    <p class="level-right"><%= payment.bankAccount.internediaryBank %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="item">
+                                    <p class="level-left">Bank Swift Code</p>
+                                    <p class="level-right"><%= payment.bankAccount.intermediaryBankSwiftCode %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <% if (payment.bankAccount.bankAddress) { %>
+                                    <div class="item">
+                                        <p class="level-left">Bank Address</p>
+                                        <p class="level-right"><%= payment.bankAccount.bankAddress %></p>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                <% } %>
+                                <div class="item">
+                                    <p class="level-left">Further Credit to</p>
+                                    <p class="level-right"><%= payment.bankAccount.accountName %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="item">
+                                    <p class="level-left">Account Number</p>
+                                    <p class="level-right"><%= payment.bankAccount.accountNo %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="item">
+                                    <p class="level-left">Address</p>
+                                    <p class="level-right"><%= payment.bankAccount.address %></p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                    <div class="items has-border-top">
+                        <% if (payment.rrrNo) { %>
+                            <div class="item">
+                                <p class="level-left">Remita RRR Number</p>
+                                <p class="has-text-success is-size-5 level-right"><%= payment.rrrNo %></p>
+                                <div class="clearfix"></div>
+                            </div>
+                        <% } %>
+                        <div class="item is-amount">
+                            <p class="level-left">Amount</p>
+                            <p class="has-text-success is-size-5 level-right"><%= payment.amountPaid %></p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <% if (!payment.rrrNo) { %>
+                            <p style="color: red; font-weight: bold; margin-top: 15px;">
+                                Note: please ensure to quote your example Unique ID and Payment reference as narrative or
+                                description when making payments either through the bank or via transfer.
+                            </p>
+                        <% } %>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
